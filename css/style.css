@@ -80,6 +80,21 @@ body {
   padding-bottom: 24px;
   display: block;
 }
+.menu-link.active {
+position: relative;
+color: #404BBF;
+}
+.menu-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404BBF;
+}
+
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
@@ -106,12 +121,20 @@ body {
 
 /* =========== Hero Section styles =========== */
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  background-color: #2e2f42;
+  max-width: 1440px;
+ margin-left: auto;
+ margin-right: auto;
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-image.jpg);
+    background-size: cover;
+    background-color: #2e2f42;
  }
 .hero-container {
- 
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .main-title {
   font-weight: 700;
@@ -182,6 +205,17 @@ gap: 24px;
 }
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
+}
+.benefits-item-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
 }
 .benefits-list-title {
   font-weight: 500;
