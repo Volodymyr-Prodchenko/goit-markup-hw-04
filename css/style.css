@@ -273,7 +273,7 @@ btn:focus {
 
   background-color: #ffffff;
 }
-ocial-conteiner {
+.name-job {
   padding: 32px 0;
 }
 .our-team-title {
@@ -296,7 +296,6 @@ ocial-conteiner {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 32px;
 }
 .social-list-item {
   width: 40px;
