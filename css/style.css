@@ -273,11 +273,7 @@ btn:focus {
   width: calc((100% - 72px) / 4);
   background-color: #ffffff;
 }
-.social {
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 32px;
+.social-conteiner {
 }
 .our-team-title {
   font-weight: 500;
@@ -299,6 +295,7 @@ btn:focus {
   display: flex;
   gap: 24px;
   justify-content: center;
+  padding-bottom: 32px;
 }
 .social-list-item {
   width: 40px;
@@ -328,12 +325,12 @@ btn:focus {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.portfolio-over {
+
+.our-portfolio-overlay {
   position: relative;
   overflow: hidden;
 }
-.our-portfolio-overlay {
-}
+
 .our-portfolio-overlay-text {
   font-size: 16px;
   line-height: 1.5;
@@ -366,11 +363,11 @@ btn:focus {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-portfolio-list:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-portfolio-list-item {
   width: calc((100% - 48) / 3);
@@ -401,10 +398,12 @@ btn:focus {
   padding-left: 156px;
 }
 
-.foter-page {
+.footer-page {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: baseline;
 }
 .container-footer-logo {
   margin-right: 120px;
